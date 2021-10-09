@@ -90,6 +90,20 @@ function myKeyDown(e) {
 
 }
 
+if (keyPressed == 80 && e.shiftKey == true) {
+        block_Width = block_Width + 10;
+        block_Height = block_Height + 10;
+        document.getElementById("width-span").innerHTML = block_Width;
+        document.getElementById("height-span").innerHTML = block_Height;
+    }
+
+    if (keyPressed == 77 && e.shiftKey == true) {
+        block_Width = block_Width - 10;
+        block_Height = block_Height - 10;
+        document.getElementById("width-span").innerHTML = block_Width;
+        document.getElementById("height-span").innerHTML = block_Height;
+    }
+
 function up() {
     if(playerY >= 0) {
         console.log("top is pressed");
